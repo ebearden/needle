@@ -23,13 +23,16 @@ struct Property: Hashable {
     let name: String
     /// The property type `String`.
     let type: String
-    /// If this property is internal
+    /// If this property is internal.
     let isInternal: Bool
+    /// If this property is isolated to the MainActor.
+    let isMainActor: Bool
     
-    init(name: String, type: String, isInternal: Bool = false) {
+    init(name: String, type: String, isInternal: Bool = false, isMainActor: Bool = false) {
         self.name = name
         self.type = type
         self.isInternal = isInternal
+        self.isMainActor = isMainActor
     }
 
     static func ==(lhs: Property, rhs: Property) -> Bool {

@@ -27,6 +27,7 @@ protocol ScoreStream {
     var scores: Observable<(PlayerScore, PlayerScore)> { get }
 }
 
+@MainActor
 protocol MutableScoreStream: ScoreStream {
     func updateDraw()
     func updateScore(withWinner winner: String, loser: String)

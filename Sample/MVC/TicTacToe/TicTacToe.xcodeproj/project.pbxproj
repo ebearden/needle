@@ -37,40 +37,12 @@
 			remoteGlobalIDString = 4139095220A0F2BC00A26FF5;
 			remoteInfo = TicTacToe;
 		};
-		4140797B21F808230081B8A9 /* PBXContainerItemProxy */ = {
+		6A516D8C2A954685000AEAA4 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 4140797421F808230081B8A9 /* NeedleFoundation.xcodeproj */;
 			proxyType = 2;
-			remoteGlobalIDString = "NeedleFoundation::NeedleFoundation::Product";
-			remoteInfo = NeedleFoundation;
-		};
-		4140797D21F808230081B8A9 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 4140797421F808230081B8A9 /* NeedleFoundation.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = "NeedleFoundation::NeedleFoundationTests::Product";
-			remoteInfo = NeedleFoundationTests;
-		};
-		4140798B21F808B30081B8A9 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 4140797421F808230081B8A9 /* NeedleFoundation.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = "NeedleFoundation::NeedleFoundation";
-			remoteInfo = NeedleFoundation;
-		};
-		BC1FD60E229320730077EEF3 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 4140797421F808230081B8A9 /* NeedleFoundation.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = "NeedleFoundation::NeedleFoundationTest::Product";
-			remoteInfo = NeedleFoundationTest;
-		};
-		BC1FD610229320730077EEF3 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 4140797421F808230081B8A9 /* NeedleFoundation.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = "NeedleFoundation::NeedleFoundationTestTests::Product";
-			remoteInfo = NeedleFoundationTestTests;
+			remoteGlobalIDString = C9FE9402AE3FCD8834C0DAC9;
+			remoteInfo = NeedleFoundation_ios;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -206,10 +178,7 @@
 		4140797521F808230081B8A9 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				4140797C21F808230081B8A9 /* NeedleFoundation.framework */,
-				BC1FD60F229320730077EEF3 /* NeedleFoundationTest.framework */,
-				BC1FD611229320730077EEF3 /* NeedleFoundationTestTests.xctest */,
-				4140797E21F808230081B8A9 /* NeedleFoundationTests.xctest */,
+				6A516D8D2A954685000AEAA4 /* NeedleFoundation.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -238,7 +207,6 @@
 			buildRules = (
 			);
 			dependencies = (
-				4140798C21F808B30081B8A9 /* PBXTargetDependency */,
 			);
 			name = TicTacToe;
 			packageProductDependencies = (
@@ -316,32 +284,11 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
-		4140797C21F808230081B8A9 /* NeedleFoundation.framework */ = {
+		6A516D8D2A954685000AEAA4 /* NeedleFoundation.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
 			path = NeedleFoundation.framework;
-			remoteRef = 4140797B21F808230081B8A9 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		4140797E21F808230081B8A9 /* NeedleFoundationTests.xctest */ = {
-			isa = PBXReferenceProxy;
-			fileType = file;
-			path = NeedleFoundationTests.xctest;
-			remoteRef = 4140797D21F808230081B8A9 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		BC1FD60F229320730077EEF3 /* NeedleFoundationTest.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = NeedleFoundationTest.framework;
-			remoteRef = BC1FD60E229320730077EEF3 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		BC1FD611229320730077EEF3 /* NeedleFoundationTestTests.xctest */ = {
-			isa = PBXReferenceProxy;
-			fileType = file;
-			path = NeedleFoundationTestTests.xctest;
-			remoteRef = BC1FD610229320730077EEF3 /* PBXContainerItemProxy */;
+			remoteRef = 6A516D8C2A954685000AEAA4 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
@@ -418,11 +365,6 @@
 			isa = PBXTargetDependency;
 			target = 4139095220A0F2BC00A26FF5 /* TicTacToe */;
 			targetProxy = 4139099020A22B3900A26FF5 /* PBXContainerItemProxy */;
-		};
-		4140798C21F808B30081B8A9 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = NeedleFoundation;
-			targetProxy = 4140798B21F808B30081B8A9 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 

@@ -19,6 +19,7 @@ class MyComponent: NeedleFoundation.Component<
 
     public let stream: Stream = Stream()
 
+    @MainActor
     public var donut: Donut {
         return Donut()
     }

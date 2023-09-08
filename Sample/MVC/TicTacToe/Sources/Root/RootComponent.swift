@@ -23,10 +23,12 @@ class RootComponent: BootstrapComponent {
         return mutablePlayersStream
     }
 
+    @MainActor
     public var mutablePlayersStream: MutablePlayersStream {
         return shared { PlayersStreamImpl() }
     }
 
+    @MainActor
     var rootViewController: UIViewController {
         return RootViewController(playersStream: playersStream, loggedOutBuilder: loggedOutComponent, loggedInBuilder: loggedInComponent)
     }

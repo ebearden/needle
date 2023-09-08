@@ -34,7 +34,7 @@ class PluginizedPropertiesSerializerTests: AbstractPluginizedGeneratorTests {
 
                 switch provider.data.unprocessed.pathString {
                 case "^->RootComponent->LoggedOutComponent":
-                    XCTAssertEqual(serializedProperties, "    var mutablePlayersStream: MutablePlayersStream {\n        return rootComponent.mutablePlayersStream\n    }")
+                    XCTAssertEqual(serializedProperties, "    @MainActor var mutablePlayersStream: MutablePlayersStream {\n        return rootComponent.mutablePlayersStream\n    }")
                 case "^->RootComponent->LoggedInComponent->GameComponent->GameNonCoreComponent->ScoreSheetComponent":
                     XCTAssertEqual(serializedProperties, "    var scoreStream: ScoreStream {\n        return (loggedInComponent.nonCoreComponent as! LoggedInNonCoreComponent).scoreStream\n    }")
                 case "^->RootComponent->LoggedInComponent->LoggedInNonCoreComponent->ScoreSheetComponent":

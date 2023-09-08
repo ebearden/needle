@@ -3,783 +3,583 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 46;
+	objectVersion = 50;
 	objects = {
 
-/* Begin PBXAggregateTarget section */
-		"NeedleFoundation::NeedleFoundationPackageTests::ProductTarget" /* NeedleFoundationPackageTests */ = {
-			isa = PBXAggregateTarget;
-			buildConfigurationList = OBJ_57 /* Build configuration list for PBXAggregateTarget "NeedleFoundationPackageTests" */;
-			buildPhases = (
-			);
-			dependencies = (
-				OBJ_60 /* PBXTargetDependency */,
-				OBJ_62 /* PBXTargetDependency */,
-			);
-			name = NeedleFoundationPackageTests;
-			productName = NeedleFoundationPackageTests;
-		};
-/* End PBXAggregateTarget section */
-
 /* Begin PBXBuildFile section */
-		OBJ_42 /* Bootstrap.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_9 /* Bootstrap.swift */; };
-		OBJ_43 /* Component.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_10 /* Component.swift */; };
-		OBJ_44 /* DependencyProviderRegistry.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_12 /* DependencyProviderRegistry.swift */; };
-		OBJ_45 /* PluginExtensionProviderRegistry.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_15 /* PluginExtensionProviderRegistry.swift */; };
-		OBJ_46 /* NonCoreComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_16 /* NonCoreComponent.swift */; };
-		OBJ_47 /* PluginizedComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_17 /* PluginizedComponent.swift */; };
-		OBJ_48 /* PluginizedScopeLifecycle.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_18 /* PluginizedScopeLifecycle.swift */; };
-		OBJ_55 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_6 /* Package.swift */; };
-		OBJ_69 /* MockComponentPathBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_20 /* MockComponentPathBuilder.swift */; };
-		OBJ_75 /* MockComponentPathBuilderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_28 /* MockComponentPathBuilderTests.swift */; };
-		OBJ_77 /* NeedleFoundationTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "NeedleFoundation::NeedleFoundationTest::Product" /* NeedleFoundationTest.framework */; };
-		OBJ_83 /* ComponentTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_23 /* ComponentTests.swift */; };
-		OBJ_84 /* DependencyProviderRegistryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_24 /* DependencyProviderRegistryTests.swift */; };
-		OBJ_85 /* PluginizedComponentTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_26 /* PluginizedComponentTests.swift */; };
-		OBJ_87 /* NeedleFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "NeedleFoundation::NeedleFoundation::Product" /* NeedleFoundation.framework */; };
+		04D98CC0606F62BFC621F8C8 /* DependencyProviderRegistry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87A66639509DF773BA879D0F /* DependencyProviderRegistry.swift */; };
+		0BC7683F081E6D3366631530 /* PluginExtensionProviderRegistry.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEBF8C0A7154697E4A113DE4 /* PluginExtensionProviderRegistry.swift */; };
+		18D9B470591D7C8DD5EC1448 /* NonCoreComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2FAF71C424C11CCEEF17EA0 /* NonCoreComponent.swift */; };
+		3EC339F85F7306D4457E310D /* PluginizedScopeLifecycle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F2B7D7D8FF93FF1F6860C9 /* PluginizedScopeLifecycle.swift */; };
+		BF695C07E557FFA318238AAF /* Component.swift in Sources */ = {isa = PBXBuildFile; fileRef = B587CC8A090F07D3CB3CBA27 /* Component.swift */; };
+		CD1139339ADFAB8408420B2A /* PluginizedComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9495ADE31B3D4866C72F10B4 /* PluginizedComponent.swift */; };
+		D98B0857C4AE8169DF4B6F7F /* Bootstrap.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF0CE5EBD0521976FF90EACE /* Bootstrap.swift */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		BCD469F9228F54C300368FC0 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = OBJ_1 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = "NeedleFoundation::NeedleFoundation";
-			remoteInfo = NeedleFoundation;
+/* Begin PBXCopyFilesBuildPhase section */
+		019467AD9368DB4C9DC52C0D /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
 		};
-		BCD469FA228F54C400368FC0 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = OBJ_1 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = "NeedleFoundation::NeedleFoundationTest";
-			remoteInfo = NeedleFoundationTest;
-		};
-		BCD469FB228F54C800368FC0 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = OBJ_1 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = "NeedleFoundation::NeedleFoundationTestTests";
-			remoteInfo = NeedleFoundationTestTests;
-		};
-		BCD469FC228F54C800368FC0 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = OBJ_1 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = "NeedleFoundation::NeedleFoundationTests";
-			remoteInfo = NeedleFoundationTests;
-		};
-		BCD469FD2293199800368FC0 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = OBJ_1 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = "NeedleFoundation::NeedleFoundation";
-			remoteInfo = NeedleFoundation;
-		};
-/* End PBXContainerItemProxy section */
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		"NeedleFoundation::NeedleFoundation::Product" /* NeedleFoundation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = NeedleFoundation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		"NeedleFoundation::NeedleFoundationTest::Product" /* NeedleFoundationTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = NeedleFoundationTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		"NeedleFoundation::NeedleFoundationTestTests::Product" /* NeedleFoundationTestTests.xctest */ = {isa = PBXFileReference; lastKnownFileType = file; path = NeedleFoundationTestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		"NeedleFoundation::NeedleFoundationTests::Product" /* NeedleFoundationTests.xctest */ = {isa = PBXFileReference; lastKnownFileType = file; path = NeedleFoundationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		OBJ_10 /* Component.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Component.swift; sourceTree = "<group>"; };
-		OBJ_12 /* DependencyProviderRegistry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DependencyProviderRegistry.swift; sourceTree = "<group>"; };
-		OBJ_15 /* PluginExtensionProviderRegistry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PluginExtensionProviderRegistry.swift; sourceTree = "<group>"; };
-		OBJ_16 /* NonCoreComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NonCoreComponent.swift; sourceTree = "<group>"; };
-		OBJ_17 /* PluginizedComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PluginizedComponent.swift; sourceTree = "<group>"; };
-		OBJ_18 /* PluginizedScopeLifecycle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PluginizedScopeLifecycle.swift; sourceTree = "<group>"; };
-		OBJ_20 /* MockComponentPathBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockComponentPathBuilder.swift; sourceTree = "<group>"; };
-		OBJ_23 /* ComponentTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComponentTests.swift; sourceTree = "<group>"; };
-		OBJ_24 /* DependencyProviderRegistryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DependencyProviderRegistryTests.swift; sourceTree = "<group>"; };
-		OBJ_26 /* PluginizedComponentTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PluginizedComponentTests.swift; sourceTree = "<group>"; };
-		OBJ_28 /* MockComponentPathBuilderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockComponentPathBuilderTests.swift; sourceTree = "<group>"; };
-		OBJ_29 /* Images */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Images; sourceTree = SOURCE_ROOT; };
-		OBJ_30 /* Generator */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Generator; sourceTree = SOURCE_ROOT; };
-		OBJ_31 /* Sample */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Sample; sourceTree = SOURCE_ROOT; };
-		OBJ_6 /* Package.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
-		OBJ_9 /* Bootstrap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bootstrap.swift; sourceTree = "<group>"; };
+		13C9949D24FDE602E009E0AD /* NeedleFoundation_ios-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "NeedleFoundation_ios-Info.plist"; sourceTree = "<group>"; };
+		18F2B7D7D8FF93FF1F6860C9 /* PluginizedScopeLifecycle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PluginizedScopeLifecycle.swift; sourceTree = "<group>"; };
+		87A66639509DF773BA879D0F /* DependencyProviderRegistry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DependencyProviderRegistry.swift; sourceTree = "<group>"; };
+		9495ADE31B3D4866C72F10B4 /* PluginizedComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PluginizedComponent.swift; sourceTree = "<group>"; };
+		A2FAF71C424C11CCEEF17EA0 /* NonCoreComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NonCoreComponent.swift; sourceTree = "<group>"; };
+		B587CC8A090F07D3CB3CBA27 /* Component.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Component.swift; sourceTree = "<group>"; };
+		C9FE9402AE3FCD8834C0DAC9 /* NeedleFoundation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = NeedleFoundation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CEBF8C0A7154697E4A113DE4 /* PluginExtensionProviderRegistry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PluginExtensionProviderRegistry.swift; sourceTree = "<group>"; };
+		FF0CE5EBD0521976FF90EACE /* Bootstrap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bootstrap.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		OBJ_49 /* Frameworks */ = {
+		3E97C83E77342EC95FB40E60 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 0;
+			buildActionMask = 2147483647;
 			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		OBJ_70 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 0;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		OBJ_76 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 0;
-			files = (
-				OBJ_77 /* NeedleFoundationTest.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		OBJ_86 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 0;
-			files = (
-				OBJ_87 /* NeedleFoundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		OBJ_11 /* Internal */ = {
+		0D70D93AC253CBC782315EFB /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				OBJ_12 /* DependencyProviderRegistry.swift */,
 			);
-			path = Internal;
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		OBJ_13 /* Pluginized */ = {
+		1E595956AD102C084CE19F37 /* NeedleFoundation */ = {
 			isa = PBXGroup;
 			children = (
-				OBJ_14 /* Internal */,
-				OBJ_16 /* NonCoreComponent.swift */,
-				OBJ_17 /* PluginizedComponent.swift */,
-				OBJ_18 /* PluginizedScopeLifecycle.swift */,
+				F14CABB3B6E31D500B3371DC /* Internal */,
+				4B81F4209A4941C336C451DB /* Pluginized */,
+				FF0CE5EBD0521976FF90EACE /* Bootstrap.swift */,
+				B587CC8A090F07D3CB3CBA27 /* Component.swift */,
+			);
+			path = NeedleFoundation;
+			sourceTree = "<group>";
+		};
+		3813EC10CEA37102563EA9EF /* Project */ = {
+			isa = PBXGroup;
+			children = (
+				C0A164114F47BA053562A169 /* Derived */,
+				AC9B232B3DDED7D80F7A7D81 /* Sources */,
+			);
+			name = Project;
+			sourceTree = "<group>";
+		};
+		4B81F4209A4941C336C451DB /* Pluginized */ = {
+			isa = PBXGroup;
+			children = (
+				8AEE8F6A3D4B2D648C5001A8 /* Internal */,
+				A2FAF71C424C11CCEEF17EA0 /* NonCoreComponent.swift */,
+				9495ADE31B3D4866C72F10B4 /* PluginizedComponent.swift */,
+				18F2B7D7D8FF93FF1F6860C9 /* PluginizedScopeLifecycle.swift */,
 			);
 			path = Pluginized;
 			sourceTree = "<group>";
 		};
-		OBJ_14 /* Internal */ = {
+		4C8DE94E30E9459CF5C56E63 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				OBJ_15 /* PluginExtensionProviderRegistry.swift */,
-			);
-			path = Internal;
-			sourceTree = "<group>";
-		};
-		OBJ_19 /* NeedleFoundationTest */ = {
-			isa = PBXGroup;
-			children = (
-				OBJ_20 /* MockComponentPathBuilder.swift */,
-			);
-			name = NeedleFoundationTest;
-			path = Sources/NeedleFoundationTest;
-			sourceTree = SOURCE_ROOT;
-		};
-		OBJ_21 /* Tests */ = {
-			isa = PBXGroup;
-			children = (
-				OBJ_22 /* NeedleFoundationTests */,
-				OBJ_27 /* NeedleFoundationTestTests */,
-			);
-			name = Tests;
-			sourceTree = SOURCE_ROOT;
-		};
-		OBJ_22 /* NeedleFoundationTests */ = {
-			isa = PBXGroup;
-			children = (
-				OBJ_23 /* ComponentTests.swift */,
-				OBJ_24 /* DependencyProviderRegistryTests.swift */,
-				OBJ_25 /* Pluginized */,
-			);
-			name = NeedleFoundationTests;
-			path = Tests/NeedleFoundationTests;
-			sourceTree = SOURCE_ROOT;
-		};
-		OBJ_25 /* Pluginized */ = {
-			isa = PBXGroup;
-			children = (
-				OBJ_26 /* PluginizedComponentTests.swift */,
-			);
-			path = Pluginized;
-			sourceTree = "<group>";
-		};
-		OBJ_27 /* NeedleFoundationTestTests */ = {
-			isa = PBXGroup;
-			children = (
-				OBJ_28 /* MockComponentPathBuilderTests.swift */,
-			);
-			name = NeedleFoundationTestTests;
-			path = Tests/NeedleFoundationTestTests;
-			sourceTree = SOURCE_ROOT;
-		};
-		OBJ_32 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				"NeedleFoundation::NeedleFoundation::Product" /* NeedleFoundation.framework */,
-				"NeedleFoundation::NeedleFoundationTestTests::Product" /* NeedleFoundationTestTests.xctest */,
-				"NeedleFoundation::NeedleFoundationTests::Product" /* NeedleFoundationTests.xctest */,
-				"NeedleFoundation::NeedleFoundationTest::Product" /* NeedleFoundationTest.framework */,
+				C9FE9402AE3FCD8834C0DAC9 /* NeedleFoundation.framework */,
 			);
 			name = Products;
-			sourceTree = BUILT_PRODUCTS_DIR;
+			sourceTree = "<group>";
 		};
-		OBJ_5 = {
+		8AEE8F6A3D4B2D648C5001A8 /* Internal */ = {
 			isa = PBXGroup;
 			children = (
-				OBJ_6 /* Package.swift */,
-				OBJ_7 /* Sources */,
-				OBJ_21 /* Tests */,
-				OBJ_29 /* Images */,
-				OBJ_30 /* Generator */,
-				OBJ_31 /* Sample */,
-				OBJ_32 /* Products */,
+				CEBF8C0A7154697E4A113DE4 /* PluginExtensionProviderRegistry.swift */,
+			);
+			path = Internal;
+			sourceTree = "<group>";
+		};
+		9CDE8F684AFE12F4526EF6EA = {
+			isa = PBXGroup;
+			children = (
+				3813EC10CEA37102563EA9EF /* Project */,
+				0D70D93AC253CBC782315EFB /* Frameworks */,
+				4C8DE94E30E9459CF5C56E63 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		OBJ_7 /* Sources */ = {
+		AC9B232B3DDED7D80F7A7D81 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
-				OBJ_8 /* NeedleFoundation */,
-				OBJ_19 /* NeedleFoundationTest */,
+				1E595956AD102C084CE19F37 /* NeedleFoundation */,
 			);
-			name = Sources;
-			sourceTree = SOURCE_ROOT;
+			path = Sources;
+			sourceTree = "<group>";
 		};
-		OBJ_8 /* NeedleFoundation */ = {
+		C0A164114F47BA053562A169 /* Derived */ = {
 			isa = PBXGroup;
 			children = (
-				OBJ_9 /* Bootstrap.swift */,
-				OBJ_10 /* Component.swift */,
-				OBJ_11 /* Internal */,
-				OBJ_13 /* Pluginized */,
+				CA86BE5D6A1E51F9AA87B178 /* InfoPlists */,
 			);
-			name = NeedleFoundation;
-			path = Sources/NeedleFoundation;
-			sourceTree = SOURCE_ROOT;
+			path = Derived;
+			sourceTree = "<group>";
+		};
+		CA86BE5D6A1E51F9AA87B178 /* InfoPlists */ = {
+			isa = PBXGroup;
+			children = (
+				13C9949D24FDE602E009E0AD /* NeedleFoundation_ios-Info.plist */,
+			);
+			path = InfoPlists;
+			sourceTree = "<group>";
+		};
+		F14CABB3B6E31D500B3371DC /* Internal */ = {
+			isa = PBXGroup;
+			children = (
+				87A66639509DF773BA879D0F /* DependencyProviderRegistry.swift */,
+			);
+			path = Internal;
+			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		"NeedleFoundation::NeedleFoundation" /* NeedleFoundation */ = {
+		2294EC9F1410656B7EE44002 /* NeedleFoundation_ios */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = OBJ_38 /* Build configuration list for PBXNativeTarget "NeedleFoundation" */;
+			buildConfigurationList = 3EAE4E5DA4262F2A6DD68080 /* Build configuration list for PBXNativeTarget "NeedleFoundation_ios" */;
 			buildPhases = (
-				OBJ_41 /* Sources */,
-				OBJ_49 /* Frameworks */,
+				0E390B1971F4FF5A0F9C39A5 /* Sources */,
+				1F785A4B35B4CC097F79F96F /* Resources */,
+				019467AD9368DB4C9DC52C0D /* Embed Frameworks */,
+				3E97C83E77342EC95FB40E60 /* Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = NeedleFoundation;
+			name = NeedleFoundation_ios;
 			productName = NeedleFoundation;
-			productReference = "NeedleFoundation::NeedleFoundation::Product" /* NeedleFoundation.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		"NeedleFoundation::NeedleFoundationTest" /* NeedleFoundationTest */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = OBJ_65 /* Build configuration list for PBXNativeTarget "NeedleFoundationTest" */;
-			buildPhases = (
-				OBJ_68 /* Sources */,
-				OBJ_70 /* Frameworks */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				BCD469FE2293199800368FC0 /* PBXTargetDependency */,
-			);
-			name = NeedleFoundationTest;
-			productName = NeedleFoundationTest;
-			productReference = "NeedleFoundation::NeedleFoundationTest::Product" /* NeedleFoundationTest.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		"NeedleFoundation::NeedleFoundationTestTests" /* NeedleFoundationTestTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = OBJ_71 /* Build configuration list for PBXNativeTarget "NeedleFoundationTestTests" */;
-			buildPhases = (
-				OBJ_74 /* Sources */,
-				OBJ_76 /* Frameworks */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				OBJ_78 /* PBXTargetDependency */,
-			);
-			name = NeedleFoundationTestTests;
-			productName = NeedleFoundationTestTests;
-			productReference = "NeedleFoundation::NeedleFoundationTestTests::Product" /* NeedleFoundationTestTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		"NeedleFoundation::NeedleFoundationTests" /* NeedleFoundationTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = OBJ_79 /* Build configuration list for PBXNativeTarget "NeedleFoundationTests" */;
-			buildPhases = (
-				OBJ_82 /* Sources */,
-				OBJ_86 /* Frameworks */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				OBJ_88 /* PBXTargetDependency */,
-			);
-			name = NeedleFoundationTests;
-			productName = NeedleFoundationTests;
-			productReference = "NeedleFoundation::NeedleFoundationTests::Product" /* NeedleFoundationTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		"NeedleFoundation::SwiftPMPackageDescription" /* NeedleFoundationPackageDescription */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = OBJ_51 /* Build configuration list for PBXNativeTarget "NeedleFoundationPackageDescription" */;
-			buildPhases = (
-				OBJ_54 /* Sources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = NeedleFoundationPackageDescription;
-			productName = NeedleFoundationPackageDescription;
+			productReference = C9FE9402AE3FCD8834C0DAC9 /* NeedleFoundation.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		OBJ_1 /* Project object */ = {
+		35F378DF4FFE49607B90CF19 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 9999;
+				TargetAttributes = {
+				};
 			};
-			buildConfigurationList = OBJ_2 /* Build configuration list for PBXProject "NeedleFoundation" */;
-			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = English;
+			buildConfigurationList = 95A2A12689287AB545FE2ECC /* Build configuration list for PBXProject "NeedleFoundation" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
-				English,
+				Base,
 				en,
 			);
-			mainGroup = OBJ_5;
-			productRefGroup = OBJ_32 /* Products */;
+			mainGroup = 9CDE8F684AFE12F4526EF6EA;
+			productRefGroup = 4C8DE94E30E9459CF5C56E63 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				"NeedleFoundation::NeedleFoundation" /* NeedleFoundation */,
-				"NeedleFoundation::SwiftPMPackageDescription" /* NeedleFoundationPackageDescription */,
-				"NeedleFoundation::NeedleFoundationPackageTests::ProductTarget" /* NeedleFoundationPackageTests */,
-				"NeedleFoundation::NeedleFoundationTest" /* NeedleFoundationTest */,
-				"NeedleFoundation::NeedleFoundationTestTests" /* NeedleFoundationTestTests */,
-				"NeedleFoundation::NeedleFoundationTests" /* NeedleFoundationTests */,
+				2294EC9F1410656B7EE44002 /* NeedleFoundation_ios */,
 			);
 		};
 /* End PBXProject section */
 
+/* Begin PBXResourcesBuildPhase section */
+		1F785A4B35B4CC097F79F96F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
-		OBJ_41 /* Sources */ = {
+		0E390B1971F4FF5A0F9C39A5 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
-			buildActionMask = 0;
+			buildActionMask = 2147483647;
 			files = (
-				OBJ_42 /* Bootstrap.swift in Sources */,
-				OBJ_43 /* Component.swift in Sources */,
-				OBJ_44 /* DependencyProviderRegistry.swift in Sources */,
-				OBJ_45 /* PluginExtensionProviderRegistry.swift in Sources */,
-				OBJ_46 /* NonCoreComponent.swift in Sources */,
-				OBJ_47 /* PluginizedComponent.swift in Sources */,
-				OBJ_48 /* PluginizedScopeLifecycle.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		OBJ_54 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 0;
-			files = (
-				OBJ_55 /* Package.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		OBJ_68 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 0;
-			files = (
-				OBJ_69 /* MockComponentPathBuilder.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		OBJ_74 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 0;
-			files = (
-				OBJ_75 /* MockComponentPathBuilderTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		OBJ_82 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 0;
-			files = (
-				OBJ_83 /* ComponentTests.swift in Sources */,
-				OBJ_84 /* DependencyProviderRegistryTests.swift in Sources */,
-				OBJ_85 /* PluginizedComponentTests.swift in Sources */,
+				D98B0857C4AE8169DF4B6F7F /* Bootstrap.swift in Sources */,
+				BF695C07E557FFA318238AAF /* Component.swift in Sources */,
+				04D98CC0606F62BFC621F8C8 /* DependencyProviderRegistry.swift in Sources */,
+				0BC7683F081E6D3366631530 /* PluginExtensionProviderRegistry.swift in Sources */,
+				18D9B470591D7C8DD5EC1448 /* NonCoreComponent.swift in Sources */,
+				CD1139339ADFAB8408420B2A /* PluginizedComponent.swift in Sources */,
+				3EC339F85F7306D4457E310D /* PluginizedScopeLifecycle.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
-/* Begin PBXTargetDependency section */
-		BCD469FE2293199800368FC0 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = "NeedleFoundation::NeedleFoundation" /* NeedleFoundation */;
-			targetProxy = BCD469FD2293199800368FC0 /* PBXContainerItemProxy */;
-		};
-		OBJ_60 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = "NeedleFoundation::NeedleFoundationTestTests" /* NeedleFoundationTestTests */;
-			targetProxy = BCD469FB228F54C800368FC0 /* PBXContainerItemProxy */;
-		};
-		OBJ_62 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = "NeedleFoundation::NeedleFoundationTests" /* NeedleFoundationTests */;
-			targetProxy = BCD469FC228F54C800368FC0 /* PBXContainerItemProxy */;
-		};
-		OBJ_78 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = "NeedleFoundation::NeedleFoundationTest" /* NeedleFoundationTest */;
-			targetProxy = BCD469FA228F54C400368FC0 /* PBXContainerItemProxy */;
-		};
-		OBJ_88 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = "NeedleFoundation::NeedleFoundation" /* NeedleFoundation */;
-			targetProxy = BCD469F9228F54C300368FC0 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
-
 /* Begin XCBuildConfiguration section */
-		OBJ_3 /* Debug */ = {
+		30527B1A58287AD2C70F8A79 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
-				COMBINE_HIDPI_IMAGES = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0.0;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		80AAF62CBA6E8A833A7601D9 /* UITesting */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = dwarf;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_NS_ASSERTIONS = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
-				OTHER_SWIFT_FLAGS = "-DXcode";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = macosx;
-				SUPPORTED_PLATFORMS = "macosx iphoneos iphonesimulator appletvos appletvsimulator watchos watchsimulator";
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "SWIFT_PACKAGE DEBUG";
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				TVOS_DEPLOYMENT_TARGET = 9.0;
-				USE_HEADERMAP = NO;
-				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+				SWIFT_VERSION = 5.0.0;
 			};
-			name = Debug;
+			name = UITesting;
 		};
-		OBJ_39 /* Debug */ = {
+		BE289C69CAE1562729439FF1 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				APPLICATION_EXTENSION_API_ONLY = YES;
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = NO;
+				CODE_SIGN_IDENTITY = "";
 				CURRENT_PROJECT_VERSION = 1;
-				ENABLE_TESTABILITY = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
-				);
-				HEADER_SEARCH_PATHS = "$(inherited)";
-				INFOPLIST_FILE = NeedleFoundation.xcodeproj/NeedleFoundation_Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
-				OTHER_CFLAGS = "$(inherited)";
-				OTHER_LDFLAGS = "$(inherited)";
-				OTHER_SWIFT_FLAGS = "$(inherited)";
-				PRODUCT_BUNDLE_IDENTIFIER = NeedleFoundation;
-				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
-				SWIFT_VERSION = 4.0;
-				TARGET_NAME = NeedleFoundation;
-			};
-			name = Debug;
-		};
-		OBJ_4 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CLANG_ENABLE_OBJC_ARC = YES;
-				COMBINE_HIDPI_IMAGES = YES;
-				COPY_PHASE_STRIP = YES;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_OPTIMIZATION_LEVEL = s;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				MACOSX_DEPLOYMENT_TARGET = 10.10;
-				OTHER_SWIFT_FLAGS = "-DXcode";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = macosx;
-				SUPPORTED_PLATFORMS = "macosx iphoneos iphonesimulator appletvos appletvsimulator watchos watchsimulator";
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = SWIFT_PACKAGE;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				TVOS_DEPLOYMENT_TARGET = 9.0;
-				USE_HEADERMAP = NO;
-				WATCHOS_DEPLOYMENT_TARGET = 2.0;
-			};
-			name = Release;
-		};
-		OBJ_40 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				APPLICATION_EXTENSION_API_ONLY = YES;
-				CURRENT_PROJECT_VERSION = 1;
-				ENABLE_TESTABILITY = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
 				);
-				HEADER_SEARCH_PATHS = "$(inherited)";
-				INFOPLIST_FILE = NeedleFoundation.xcodeproj/NeedleFoundation_Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
-				OTHER_CFLAGS = "$(inherited)";
-				OTHER_LDFLAGS = "$(inherited)";
-				OTHER_SWIFT_FLAGS = "$(inherited)";
+				GCC_NO_COMMON_BLOCKS = NO;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"SWIFT_PACKAGE=1",
+				);
+				GCC_WARN_INHIBIT_ALL_WARNINGS = YES;
+				INFOPLIST_FILE = "Derived/InfoPlists/NeedleFoundation_ios-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
 				PRODUCT_BUNDLE_IDENTIFIER = NeedleFoundation;
-				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = NeedleFoundation;
+				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
-				SWIFT_VERSION = 4.0;
-				TARGET_NAME = NeedleFoundation;
-			};
-			name = Release;
-		};
-		OBJ_52 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				LD = /usr/bin/true;
-				OTHER_SWIFT_FLAGS = "-swift-version 4 -I $(TOOLCHAIN_DIR)/usr/lib/swift/pm/4 -target x86_64-apple-macosx10.10 -sdk /Applications/Xcode.10.1.0.10B61.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk";
-				SWIFT_VERSION = 4.0;
-			};
-			name = Debug;
-		};
-		OBJ_53 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				LD = /usr/bin/true;
-				OTHER_SWIFT_FLAGS = "-swift-version 4 -I $(TOOLCHAIN_DIR)/usr/lib/swift/pm/4 -target x86_64-apple-macosx10.10 -sdk /Applications/Xcode.10.1.0.10B61.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk";
-				SWIFT_VERSION = 4.0;
-			};
-			name = Release;
-		};
-		OBJ_58 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = (
+					"$(inherited)",
+					DEBUG,
+					SWIFT_PACKAGE,
+				);
+				SWIFT_COMPILATION_MODE = singlefile;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_SUPPRESS_WARNINGS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				USE_HEADERMAP = NO;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
 		};
-		OBJ_59 /* Release */ = {
+		C4576CA7CB6F3BA0C7BF5AB8 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = NO;
+				CODE_SIGN_IDENTITY = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				GCC_NO_COMMON_BLOCKS = NO;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"SWIFT_PACKAGE=1",
+				);
+				GCC_WARN_INHIBIT_ALL_WARNINGS = YES;
+				INFOPLIST_FILE = "Derived/InfoPlists/NeedleFoundation_ios-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				PRODUCT_BUNDLE_IDENTIFIER = NeedleFoundation;
+				PRODUCT_NAME = NeedleFoundation;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = (
+					"$(inherited)",
+					SWIFT_PACKAGE,
+				);
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_SUPPRESS_WARNINGS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				USE_HEADERMAP = NO;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
 		};
-		OBJ_66 /* Debug */ = {
+		DA361727EE7423A5F845B400 /* UITesting */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = NO;
+				CODE_SIGN_IDENTITY = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				GCC_NO_COMMON_BLOCKS = NO;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"SWIFT_PACKAGE=1",
+				);
+				GCC_WARN_INHIBIT_ALL_WARNINGS = YES;
+				INFOPLIST_FILE = "Derived/InfoPlists/NeedleFoundation_ios-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				PRODUCT_BUNDLE_IDENTIFIER = NeedleFoundation;
+				PRODUCT_NAME = NeedleFoundation;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = (
+					"$(inherited)",
+					DEBUG,
+					SWIFT_PACKAGE,
+				);
+				SWIFT_COMPILATION_MODE = singlefile;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_SUPPRESS_WARNINGS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				USE_HEADERMAP = NO;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = UITesting;
+		};
+		F08EBF85F4E45FDD94110D5F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
-				FRAMEWORK_SEARCH_PATHS = (
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
 					"$(inherited)",
-					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
 				);
-				HEADER_SEARCH_PATHS = "$(inherited)";
-				INFOPLIST_FILE = NeedleFoundation.xcodeproj/NeedleFoundationTest_Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
-				OTHER_CFLAGS = "$(inherited)";
-				OTHER_LDFLAGS = "$(inherited)";
-				OTHER_SWIFT_FLAGS = "$(inherited)";
-				PRODUCT_BUNDLE_IDENTIFIER = NeedleFoundationTest;
-				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
-				SWIFT_VERSION = 4.0;
-				TARGET_NAME = NeedleFoundationTest;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0.0;
 			};
 			name = Debug;
-		};
-		OBJ_67 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ENABLE_TESTABILITY = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
-				);
-				HEADER_SEARCH_PATHS = "$(inherited)";
-				INFOPLIST_FILE = NeedleFoundation.xcodeproj/NeedleFoundationTest_Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
-				OTHER_CFLAGS = "$(inherited)";
-				OTHER_LDFLAGS = "$(inherited)";
-				OTHER_SWIFT_FLAGS = "$(inherited)";
-				PRODUCT_BUNDLE_IDENTIFIER = NeedleFoundationTest;
-				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
-				SWIFT_VERSION = 4.0;
-				TARGET_NAME = NeedleFoundationTest;
-			};
-			name = Release;
-		};
-		OBJ_72 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CLANG_ENABLE_MODULES = YES;
-				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
-				);
-				HEADER_SEARCH_PATHS = "$(inherited)";
-				INFOPLIST_FILE = NeedleFoundation.xcodeproj/NeedleFoundationTestTests_Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @loader_path/../Frameworks @loader_path/Frameworks";
-				OTHER_CFLAGS = "$(inherited)";
-				OTHER_LDFLAGS = "$(inherited)";
-				OTHER_SWIFT_FLAGS = "$(inherited)";
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
-				SWIFT_VERSION = 4.0;
-				TARGET_NAME = NeedleFoundationTestTests;
-			};
-			name = Debug;
-		};
-		OBJ_73 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CLANG_ENABLE_MODULES = YES;
-				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
-				);
-				HEADER_SEARCH_PATHS = "$(inherited)";
-				INFOPLIST_FILE = NeedleFoundation.xcodeproj/NeedleFoundationTestTests_Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @loader_path/../Frameworks @loader_path/Frameworks";
-				OTHER_CFLAGS = "$(inherited)";
-				OTHER_LDFLAGS = "$(inherited)";
-				OTHER_SWIFT_FLAGS = "$(inherited)";
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
-				SWIFT_VERSION = 4.0;
-				TARGET_NAME = NeedleFoundationTestTests;
-			};
-			name = Release;
-		};
-		OBJ_80 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CLANG_ENABLE_MODULES = YES;
-				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
-				);
-				HEADER_SEARCH_PATHS = "$(inherited)";
-				INFOPLIST_FILE = NeedleFoundation.xcodeproj/NeedleFoundationTests_Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @loader_path/../Frameworks @loader_path/Frameworks";
-				OTHER_CFLAGS = "$(inherited)";
-				OTHER_LDFLAGS = "$(inherited)";
-				OTHER_SWIFT_FLAGS = "$(inherited)";
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
-				SWIFT_VERSION = 4.0;
-				TARGET_NAME = NeedleFoundationTests;
-			};
-			name = Debug;
-		};
-		OBJ_81 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CLANG_ENABLE_MODULES = YES;
-				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
-				);
-				HEADER_SEARCH_PATHS = "$(inherited)";
-				INFOPLIST_FILE = NeedleFoundation.xcodeproj/NeedleFoundationTests_Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @loader_path/../Frameworks @loader_path/Frameworks";
-				OTHER_CFLAGS = "$(inherited)";
-				OTHER_LDFLAGS = "$(inherited)";
-				OTHER_SWIFT_FLAGS = "$(inherited)";
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
-				SWIFT_VERSION = 4.0;
-				TARGET_NAME = NeedleFoundationTests;
-			};
-			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		OBJ_2 /* Build configuration list for PBXProject "NeedleFoundation" */ = {
+		3EAE4E5DA4262F2A6DD68080 /* Build configuration list for PBXNativeTarget "NeedleFoundation_ios" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				OBJ_3 /* Debug */,
-				OBJ_4 /* Release */,
+				BE289C69CAE1562729439FF1 /* Debug */,
+				C4576CA7CB6F3BA0C7BF5AB8 /* Release */,
+				DA361727EE7423A5F845B400 /* UITesting */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		OBJ_38 /* Build configuration list for PBXNativeTarget "NeedleFoundation" */ = {
+		95A2A12689287AB545FE2ECC /* Build configuration list for PBXProject "NeedleFoundation" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				OBJ_39 /* Debug */,
-				OBJ_40 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		OBJ_51 /* Build configuration list for PBXNativeTarget "NeedleFoundationPackageDescription" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				OBJ_52 /* Debug */,
-				OBJ_53 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		OBJ_57 /* Build configuration list for PBXAggregateTarget "NeedleFoundationPackageTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				OBJ_58 /* Debug */,
-				OBJ_59 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		OBJ_65 /* Build configuration list for PBXNativeTarget "NeedleFoundationTest" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				OBJ_66 /* Debug */,
-				OBJ_67 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		OBJ_71 /* Build configuration list for PBXNativeTarget "NeedleFoundationTestTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				OBJ_72 /* Debug */,
-				OBJ_73 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		OBJ_79 /* Build configuration list for PBXNativeTarget "NeedleFoundationTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				OBJ_80 /* Debug */,
-				OBJ_81 /* Release */,
+				F08EBF85F4E45FDD94110D5F /* Debug */,
+				30527B1A58287AD2C70F8A79 /* Release */,
+				80AAF62CBA6E8A833A7601D9 /* UITesting */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = OBJ_1 /* Project object */;
+	rootObject = 35F378DF4FFE49607B90CF19 /* Project object */;
 }

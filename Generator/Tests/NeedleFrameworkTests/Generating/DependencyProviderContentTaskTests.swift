@@ -78,6 +78,7 @@ class DependencyProviderContentTaskTests: AbstractGeneratorTests {
         XCTAssertEqual(providers[0].levelMap["RootComponent"], 1)
         XCTAssertEqual(providers[0].processedProperties.count, 1)
         XCTAssertEqual(providers[0].processedProperties[0].unprocessed.name, "mutablePlayersStream")
+        XCTAssertEqual(providers[0].processedProperties[0].unprocessed.isMainActor, true)
         XCTAssertEqual(providers[0].processedProperties[0].sourceComponentType, "RootComponent")
     }
 
