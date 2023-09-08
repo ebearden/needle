@@ -53,7 +53,7 @@ class PluginizedDeclarationsParserTaskTests: AbstractParserTests {
         }
         XCTAssertTrue(containsStream)
         let containsDonut = myComponent.properties.contains { (property: Property) -> Bool in
-            return property.name == "donut" && property.type == "Donut"
+            return property.name == "donut" && property.type == "Donut" && property.isMainActor
         }
         XCTAssertTrue(containsDonut)
         let containsBasket = myComponent.properties.contains { (property: Property) -> Bool in

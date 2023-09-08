@@ -22,6 +22,7 @@ protocol LoggedOutViewModelProtocol: ObservableObject {
     func login()
 }
 
+@MainActor
 final class LoggedOutViewModel: LoggedOutViewModelProtocol {
     @Published var player1: String = ""
     @Published var player2: String = ""

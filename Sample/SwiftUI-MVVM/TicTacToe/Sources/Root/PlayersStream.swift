@@ -23,6 +23,7 @@ protocol PlayersStream {
     var names: AnyPublisher<Opponents?, Never> { get }
 }
 
+@MainActor
 protocol MutablePlayersStream: PlayersStream {
     func update(player1: String?, player2: String?)
 }

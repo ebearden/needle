@@ -19,7 +19,7 @@ import SwiftSyntax
 // MARK: - Custom-defiend Protocols
 
 /// An entity node is either a Protocol or Class syntax node
-protocol EntityNode: SyntaxNodeWithModifiers {
+protocol EntityNode: SyntaxNodeWithModifiers, SyntaxNodeWithAttributes {
     var typeName: String { get }
     var inheritanceClause: TypeInheritanceClauseSyntax? { get }
 }
@@ -64,6 +64,16 @@ extension SyntaxNodeWithModifiers {
 
     var isFileprivate: Bool {
         modifiers?.first?.name.text == "fileprivate"
+    }
+}
+
+protocol SyntaxNodeWithAttributes {
+    var attributes: AttributeListSyntax? { get }
+}
+
+extension SyntaxNodeWithAttributes {
+    var isMainActor: Bool {
+        attributes?.tokens(viewMode: .all).contains(where: { $0.text == "MainActor"}) == true
     }
 }
 
@@ -116,4 +126,4 @@ extension ExtensionDeclSyntax: EntityNode {
     }
 }
 
-extension VariableDeclSyntax: SyntaxNodeWithModifiers {}
+extension VariableDeclSyntax: SyntaxNodeWithModifiers, SyntaxNodeWithAttributes {}

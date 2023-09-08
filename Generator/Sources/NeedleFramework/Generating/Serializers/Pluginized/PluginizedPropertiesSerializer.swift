@@ -61,7 +61,7 @@ class PluginizedPropertiesSerializer: Serializer {
         }()
 
         return """
-            var \(property.data.unprocessed.name): \(property.data.unprocessed.type) {
+            \(property.data.unprocessed.isMainActor ? "@MainActor " : "")var \(property.data.unprocessed.name): \(property.data.unprocessed.type) {
                 return \(auxillaryPrefix)\(property.data.sourceComponentType.lowercasedFirstChar())\(auxillaryAccessor)\(auxillarySuffix).\(property.data.unprocessed.name)
             }
         """

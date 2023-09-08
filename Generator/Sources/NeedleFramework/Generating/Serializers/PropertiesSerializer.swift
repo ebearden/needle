@@ -45,7 +45,7 @@ class PropertiesSerializer: Serializer {
 
     private func serialize(_ property: ProcessedProperty) -> String {
         return """
-            var \(property.unprocessed.name): \(property.unprocessed.type) {
+            \(property.unprocessed.isMainActor ? "@MainActor " : "")var \(property.unprocessed.name): \(property.unprocessed.type) {
                 return \(property.sourceComponentType.lowercasedFirstChar()).\(property.unprocessed.name)
             }
         """

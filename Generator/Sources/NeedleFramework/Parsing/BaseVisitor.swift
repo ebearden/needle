@@ -58,6 +58,7 @@ class BaseVisitor: SyntaxVisitor {
         let isPrivate = node.isPrivate || currentEntityNode?.isPrivate == true
         let isFileprivate = node.isFileprivate || currentEntityNode?.isFileprivate == true
         let isInternal = !(isPublic || isPrivate || isFileprivate)
+        let isMainActor = node.isMainActor || currentEntityNode?.isMainActor == true
 
         let memberProperties = node.bindings.compactMap { pattern -> Property? in
             guard let propertyType = pattern.typeAnnotation?.type.description.trimmed,
@@ -68,7 +69,7 @@ class BaseVisitor: SyntaxVisitor {
                 info("\(currentEntityName) (\(propertyName): \(propertyType)) property is private/fileprivate, therefore inaccessible on DI graph.")
                 return nil
             } else {
-                return Property(name: propertyName, type: propertyType, isInternal: isInternal)
+                return Property(name: propertyName, type: propertyType, isInternal: isInternal, isMainActor: isMainActor)
             }
         }
         

@@ -22,7 +22,7 @@ protocol LoggedOutDependency: Dependency {
 }
 
 class LoggedOutComponent: Component<LoggedOutDependency>, LoggedOutBuilder {
-
+    @MainActor
     var loggedOutViewModel: LoggedOutViewModel {
         LoggedOutViewModel(
             mutablePlayersStream: dependency.mutablePlayersStream

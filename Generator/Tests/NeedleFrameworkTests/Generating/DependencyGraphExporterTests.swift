@@ -105,6 +105,17 @@ private class ScoreSheetDependency97f2595a691a56781aaaProvider: ScoreSheetDepend
     private let loggedInComponent: LoggedInComponent
 """))
         XCTAssertTrue(generated.contains("""
+private class LoggedOutDependencyacada53ea78d270efa2fProvider: LoggedOutDependency {
+    @MainActor var mutablePlayersStream: MutablePlayersStream {
+        return rootComponent.mutablePlayersStream
+    }
+    private let rootComponent: RootComponent
+    init(rootComponent: RootComponent) {
+        self.rootComponent = rootComponent
+    }
+}
+"""))
+        XCTAssertTrue(generated.contains("""
 /// ^->RootComponent->LoggedInComponent->GameComponent->ScoreSheetComponent
 private func factory3f7d60e2119708f293bac0d8c882e1e0d9b5eda1(_ component: NeedleFoundation.Scope) -> AnyObject {
     return ScoreSheetDependency97f2595a691a56781aaaProvider(loggedInComponent: parent2(component) as! LoggedInComponent)

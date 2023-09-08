@@ -18,6 +18,7 @@ import NeedleFoundation
 import UIKit
 
 protocol LoggedOutDependency: Dependency {
+    @MainActor
     var mutablePlayersStream: MutablePlayersStream { get }
 }
 
